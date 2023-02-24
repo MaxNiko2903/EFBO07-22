@@ -2,14 +2,14 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-class Circle {
+class circle {
 private:
-    float radius;
-    float x_center;
-    float y_center;
+	float radius;
+	float x_center;
+	float y_center;
 public:
-	Circle(float r, float x, float y);
-	Circle();
+	circle(float r, float x, float y);
+	circle();
 	void set_circle(float r, float x, float y);
 	float sqaure(float a, float b, float c);
 	bool triangle_around(float a, float b, float c);
