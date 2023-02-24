@@ -1,8 +1,10 @@
-﻿#include "Circle.h"
+#include "circle.h"
 int main()
 {
-    setlocale(0, "");
-	Circle mas[3];
+	setlocale(LC_ALL, "Russian");
+	setlocale(LC_NUMERIC, "en_EN.utf8");
+	circle mas[3];
+
 	for (int i = 0; i < 3; i++)
 	{
 		float r, x, y;
@@ -10,13 +12,7 @@ int main()
 		cin >> r >> x >> y;
 		mas[i].set_circle(r, x, y);
 	}
-	for (int i = 0; i < 3; i++) {
-		float x, y;
-		cout << "Введите координаты центра " << i + 1 << "-й окружности через пробел : ";
-		cin >> x >> y;
-		if (mas[i].check_circle(x, y)) cout << "Окружность пересекается с " << i + 1 << "-й окружностью" << endl;
-		else cout << "Окружность не пересекается с " << i + 1 << "-й окружностью" << endl;
-	}
+
 	for (int i = 0; i < 3; i++)
 	{
 		float a, b, c;
@@ -27,5 +23,13 @@ int main()
 		if (mas[i].triangle_in(a, b, c)) cout << "Треугольник вписывается в окружность" << endl;
 		else cout << "Треугольник не вписывается в окружность" << endl;
 	}
-    return 0;
+
+	for (int i = 0; i < 3; i++) {
+		float x, y;
+		cout << "Введите координаты центра " << i + 1 << "-й окружности через пробел : ";
+		cin >> x >> y;
+		if (mas[i].check_circle(x, y)) cout << "Окружность пересекается с " << i + 1 << "-й окружностью" << endl;
+		else cout << "Окружность не пересекается с " << i + 1 << "-й окружностью" << endl;
+	}
+	return 0;
 }
