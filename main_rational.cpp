@@ -1,4 +1,4 @@
-﻿#include "rational.h"
+#include "rational.h"
 int main()
 {
     setlocale(0,"");
