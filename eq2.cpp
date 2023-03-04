@@ -15,21 +15,21 @@ double eq2::find_X()
 {
     if (D < 0)
     {
-        cout << "Корней нет" << endl;
+        cout << "РљРѕСЂРЅРµР№ РЅРµС‚" << endl;
         return 0;
     }
     else 
     {
         if (D == 0)
         {
-            cout << "Корень один - " ;
+            cout << "РљРѕСЂРµРЅСЊ РѕРґРёРЅ - " ;
             double x = (-b - sqrt(D)) / (2 * a);
             cout << x;
             return x;
         }
         else
         {
-            cout << "Корней 2, наибольший - " ;
+            cout << "РљРѕСЂРЅРµР№ 2, РЅР°РёР±РѕР»СЊС€РёР№ - " ;
             double x1 = (-b - sqrt(D)) / (2 * a);
             double x2 = (-b + sqrt(D)) / (2 * a);
             if (x1 > x2)
