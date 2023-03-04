@@ -44,7 +44,7 @@ void rational::show()
 {
 	if (flag1 == false and flag == true)
 	{
-		cout << "Çíàìåíàòåëü ýòîé äðîáè ðàâåí 0" << endl;
+		cout << "Ð—Ð½Ð°Ð¼ÐµÐ½Ð°Ñ‚ÐµÐ»ÑŒ ÑÑ‚Ð¾Ð¹ Ð´Ñ€Ð¾Ð±Ð¸ Ñ€Ð°Ð²ÐµÐ½ 0" << endl;
 		flag = false;
 	}
 	else if (flag1 == false and flag == false and (a == b))
