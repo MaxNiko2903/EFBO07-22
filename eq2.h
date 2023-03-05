@@ -12,5 +12,5 @@ public:
     void set(double a1, double b1, double c1);
     double find_X();
     double find_Y(double x1);
-    double find_Y(double a,double b, double c);
+    void set(double& a1, double& b1, double& c1, double& a2, double& b2, double& c2);
 };
