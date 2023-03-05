@@ -49,7 +49,8 @@ double eq2::find_Y(double x1)
 {
     return a * x1 * x1 + b * x1 + c;
 }
-double eq2::find_Y(double a, double b, double c)
-{
-    return a + b + c;
+void eq2::set(double& a1, double& b1, double& c1, double& a2, double& b2, double& c2) {
+    a1 = a1 + a2;
+    b1 = b1 + b2;
+    c1 = c1 + c2;
 }
