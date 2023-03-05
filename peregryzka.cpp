@@ -25,7 +25,8 @@ int main()
         {
             cout << endl << "Значение квадратного многочлена: " << exmpl.find_Y(6) << endl;
         }
-        cout << "Сложеные коэффициенты: " << exmpl.find_Y(a, b, c) << endl;
+        exmpl.set(a1, b1, c1, a2, b2, c2);
+        cout << "sum1 = " << a1 << "sum2 = " << b1 << "sum3 = " << c1 << endl;
         system("pause");
     }
 
